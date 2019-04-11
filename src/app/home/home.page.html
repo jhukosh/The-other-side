@@ -1,14 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app class="main ion-text-center">
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+  <ion-content padding>
+    <div id="header">
+      <h1>Welcome to the other side</h1>
+      <h2>Choose your side</h2>
+    </div>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col class="darkSide justify-content-center">
+          <a>
+            <div id="darkButton" class="side ion-align-self-center">
+              Dark side
+            </div>
+          </a>
+        </ion-col>
+        <ion-col class="lightSide">
+          <a>
+            <div id="lightButton" class="side ion-align-self-center">
+              Light side
+            </div>
+          </a>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+
+</ion-app>

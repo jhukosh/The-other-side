@@ -1,1 +1,37 @@
+#header {
+    height : 20vh;
+    font-family: 'Play', sans-serif;
+}
 
+ion-content {
+    padding:0;
+}
+
+ion-grid {
+    padding: 0;
+}
+
+.side {
+    height : 80vh;
+    font-family: 'Play', sans-serif;
+}
+
+#lightButton {
+    color:#1e2023;
+}
+
+#darkButton {
+    color:#f5f6f9;
+}
+
+.darkSide {
+    background-color: #1e2023;
+    color:#f5f6f9;
+    width:50vw;
+}
+
+.lightSide {
+    background-color: #f5f6f9;
+    color:#1e2023;
+    width:50vw;
+}
