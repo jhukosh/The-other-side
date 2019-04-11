@@ -1,29 +1,27 @@
 <ion-app class="main ion-text-center">
 
-  <ion-content padding>
-    <div id="header">
+
+    <div id="background">
+
       <h1>Welcome to the other side</h1>
       <h2>Choose your side</h2>
+
+      <div class="center">
+        <input type="checkbox" name="" class="input1" (click)="enableDisableRule()">
+      </div>
+
+      <input type="checkbox" id="toggle" class="toggle-control">
+      <label for="toggle"></label>
+      
+      <!--<div class="light">
+          <label class="switch"><input type="checkbox" />    <div></div>
+          </label>
+          <div class="dark">
+          <label class="switch2"><input type="checkbox" />    <div></div>
+          </label>
+        </div> 
+      </div> -->
     </div>
 
-    <ion-grid>
-      <ion-row>
-        <ion-col class="darkSide justify-content-center">
-          <a>
-            <div id="darkButton" class="side ion-align-self-center">
-              Dark side
-            </div>
-          </a>
-        </ion-col>
-        <ion-col class="lightSide">
-          <a>
-            <div id="lightButton" class="side ion-align-self-center">
-              Light side
-            </div>
-          </a>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-content>
 
 </ion-app>
