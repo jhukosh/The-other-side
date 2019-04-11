@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { PeopleService } from './../../services/people.service';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { PeopleService} from '../../services/people.service'
+import { getLocaleDateFormat } from '@angular/common';
 
 @Component({
   selector: 'app-people',
@@ -8,21 +10,16 @@ import { Observable } from 'rxjs';
   styleUrls: ['./people.page.scss'],
 })
 export class PeoplePage implements OnInit {
+  results;
 
-  results: Observable<any>;
-  arrayTest = [];
-  name: string ;
-  num = 0;
+  constructor(private peopleService : PeopleService) {}
  
-  constructor(private peopleService: PeopleService) { }
- 
-  ngOnInit() { 
-    this.searchChanged(0);
-  }
+  ngOnInit() {
+    this.searchChanged();
+   }
 
+   searchChanged(){
+     this.peopleService.getData().subscribe(data => { this.results = data});
+   }
  
-  searchChanged(num) {
-    this.results = this.peopleService.getData(this.num);
-}
-
 }
