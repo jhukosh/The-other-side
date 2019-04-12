@@ -1,6 +1,7 @@
 
 textarea {
     border : 1px solid black;
+    border-radius: 20px;
 }
 h2{
     font-family: 'play';
@@ -20,6 +21,12 @@ label {
 input, label, textarea {
     margin-bottom: 25px;
     font-family: 'play';
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 p {

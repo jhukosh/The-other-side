@@ -1,12 +1,14 @@
+
 <ion-app>
+  <h2>Choose your slave !</h2>
   <ion-content [scrollEvents]="true">
     <ion-card *ngFor="let item of results; let i = index">
       <ion-card-header>
         <img [src]="item.image">
-        <ion-card-title class="name">{{ item.name }}</ion-card-title>
+        <ion-card-title id="personName" class="name">{{ item.name }}</ion-card-title>
       </ion-card-header>
     
-      <ion-card-content class="species">
+      <ion-card-content id="personSpecies" class="species">
         {{ item.species | uppercase }}
       </ion-card-content>
       <ion-row class="buttons">

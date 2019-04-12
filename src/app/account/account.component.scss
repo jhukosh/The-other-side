@@ -26,6 +26,7 @@ button:focus {
   font-weight: 400;
   cursor: pointer;
   transition: color .2s ease;
+  font-family: 'play';
 }
 
 .highlight:hover {
@@ -42,7 +43,8 @@ button:focus {
   font-weight: 300;
   text-align: center;
   margin-top: 10px;
-  color: rgba(255, 255, 255, 0.65)
+  color: rgba(255, 255, 255, 0.65);
+  font-family: 'play';
 }
 
 .input-line:focus {
@@ -63,7 +65,7 @@ button:focus {
   align-self: flex-end;
   font-size: 19px;
   font-size: 1.2rem;
-  font-family: roboto;
+  font-family: 'play';
   font-weight: 300;
   line-height: 2.5em;
   margin-top: auto;
@@ -84,7 +86,7 @@ button:focus {
   margin-bottom: 10px;
   line-height: 2.4em;
   color: #fff;
-  font-family: roboto;
+  font-family: 'play';
   font-weight: 300;
   letter-spacing: 0px;
   letter-spacing: 0.02rem;
@@ -136,13 +138,14 @@ button:focus {
 .welcome {
   color: #eee; 
   font-weight: 200;
-  font-family: 'Starjedi';
+  font-family: 'play';
   margin-top: 50px;
   text-align: center;
   font-size: 25px;
   font-size: 2.5rem;
   letter-spacing: 0px;
   letter-spacing: 0.05rem;
+  margin-bottom: 20px;
 }
 
 .subtitle {
@@ -152,6 +155,7 @@ button:focus {
   font-weight: 100;
   letter-spacing: 0px;
   letter-spacing: 0.02rem;
+  font-family: 'play';
 }
 
 .menu {
@@ -163,7 +167,7 @@ button:focus {
 .window {
   z-index: 100;
   color: #fff;
-  font-family: roboto;
+  font-family: 'play';
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
