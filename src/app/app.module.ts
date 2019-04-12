@@ -11,10 +11,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AccountComponent } from './account/account.component';
+
 import { PeoplePage } from './pages/people/people.page';
+import { HomePage } from './pages/home/home.page';
+
 
 @NgModule({
-  declarations: [AppComponent, AccountComponent, PeoplePage],
+  declarations: [AppComponent, AccountComponent, PeoplePage, HomePage],
   entryComponents: [],
 
   imports: [BrowserModule, 
