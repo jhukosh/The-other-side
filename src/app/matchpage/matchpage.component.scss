@@ -1,10 +1,30 @@
+body {
+    background: -webkit-linear-gradient(rgb(226, 115, 189), rgb(67, 41, 184)) !important;
+    background: linear-gradient(rgb(226, 115, 189), rgb(67, 41, 184)) !important;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+.img {
+    background-image: url('https://www.leyton.com/blog/wp-content/uploads/2015/12/lightsabers-1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 3;
+    opacity: 1;
+}
 
 textarea {
-    border : 1px solid black;
+    border: 1px solid black;
     border-radius: 20px;
 }
+
 h2{
     font-family: 'play';
+    color: #fff;
     text-align: center;
 }
 
@@ -16,9 +36,16 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
+    font-family: 'play';
 }
 
-input, label, textarea {
+
+
+input, textarea {
+    background-image: url('https://thumbs.gfycat.com/CrazyFemaleGoa-max-1mb.gif');
+    background-size: 20%;
+    background-repeat: no-repeat;
     margin-bottom: 25px;
     font-family: 'play';
 }
@@ -31,11 +58,20 @@ input {
 
 p {
     font-family: 'play';
+    color: #fff;
 }
 
 textarea {
     margin-right:50px;
     margin-left: 50px;
+}
+
+.stars {
+    background-image: url('http://fantazia.f.a.pic.centerblog.net/48b0d437.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    opacity: 1;
 }
 
 #finalForm {
