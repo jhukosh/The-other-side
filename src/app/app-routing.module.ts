@@ -1,15 +1,26 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
-import { PeoplePageModule } from './pages/people/people.module';
-
-
+import { HomePage } from './pages/home/home.page';
+import { PeoplePage } from './pages/people/people.page';
+import { AccountComponent } from './account/account.component';
+import { MatchpageComponent } from './matchpage/matchpage.component';
 const routes: Routes = [
-  { 
-  path: '', 
-  redirectTo: 'home', 
-  pathMatch: 'full' 
-  }
+  {
+    path:'home',
+    component: HomePage
+  },
+  {
+    path:'people',
+    component:PeoplePage
+  },
+  {
+    path:'account',
+    component:AccountComponent
+  },
+  {
+    path:'match',
+    component: MatchpageComponent
+  },
 ];
 
 @NgModule({
@@ -17,7 +28,6 @@ const routes: Routes = [
     RouterModule.forRoot(routes, 
       { preloadingStrategy: PreloadAllModules },
       ),
-      PeoplePageModule,
      
 
       

@@ -1,0 +1,41 @@
+
+textarea {
+    border : 1px solid black;
+}
+h2{
+    font-family: 'play';
+    text-align: center;
+}
+
+form {
+    font-family: 'play';
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, label, textarea {
+    margin-bottom: 25px;
+    font-family: 'play';
+}
+
+p {
+    font-family: 'play';
+}
+
+textarea {
+    margin-right:50px;
+    margin-left: 50px;
+}
+
+#finalForm {
+    margin-bottom:400px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

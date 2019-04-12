@@ -14,10 +14,11 @@ import { AccountComponent } from './account/account.component';
 
 import { PeoplePage } from './pages/people/people.page';
 import { HomePage } from './pages/home/home.page';
+import { MatchpageComponent } from './matchpage/matchpage.component'
 
 
 @NgModule({
-  declarations: [AppComponent, AccountComponent, PeoplePage, HomePage],
+  declarations: [AppComponent, AccountComponent, PeoplePage, HomePage, MatchpageComponent],
   entryComponents: [],
 
   imports: [BrowserModule, 
