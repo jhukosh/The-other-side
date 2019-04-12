@@ -5,16 +5,38 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { NetworkInterface } from '@ionic-native/network-interface/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+<<<<<<< HEAD
+import { AccountComponent } from './account/account.component';
+import { BasketComponent } from './basket/basket.component';
+
+
+=======
+import { HttpClientModule } from '@angular/common/http';
+>>>>>>> peopleLogicTwo
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    AccountComponent,
+    BasketComponent
+    ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+<<<<<<< HEAD
+
+  imports: [BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule
+  ],
+=======
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+>>>>>>> peopleLogicTwo
   providers: [
     StatusBar,
+    NetworkInterface,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
