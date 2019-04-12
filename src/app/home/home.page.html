@@ -1,14 +1,27 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app class="main ion-text-center">
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
-</ion-content>
+
+    <div id="background">
+
+      <h1>Welcome to the other side</h1>
+      <h2>Choose your side</h2>
+
+      <div class="center">
+        <input type="checkbox" name="" class="input1" (click)="enableDisableRule()">
+      </div>
+
+      <input type="checkbox" id="toggle" class="toggle-control">
+      <label for="toggle"></label>
+      
+      <!--<div class="light">
+          <label class="switch"><input type="checkbox" />    <div></div>
+          </label>
+          <div class="dark">
+          <label class="switch2"><input type="checkbox" />    <div></div>
+          </label>
+        </div> 
+      </div> -->
+    </div>
+
+
+</ion-app>
