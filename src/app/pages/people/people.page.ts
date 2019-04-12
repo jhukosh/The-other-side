@@ -11,6 +11,9 @@ import { getLocaleDateFormat } from '@angular/common';
 })
 export class PeoplePage implements OnInit {
   results;
+  result;
+  index:number;
+  adds = [];
 
   constructor(private peopleService : PeopleService) {}
  
@@ -20,6 +23,21 @@ export class PeoplePage implements OnInit {
 
    searchChanged(){
      this.peopleService.getData().subscribe(data => { this.results = data});
+     console.log(this.results);
+   }
+
+   displayName(index){
+    this.result = this.results[index];
+    console.log(this.result);
+    return this.result;
+   }
+
+   addToBasket(person){
+     this.adds.push(person);
+   }
+
+   erase(index) {
+    this.results.splice(index, 1);
    }
  
 }
