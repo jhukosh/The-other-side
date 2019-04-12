@@ -1,6 +1,8 @@
 {
   "name": "theOtherSide",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "a952b0b4"
 }

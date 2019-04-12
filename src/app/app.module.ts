@@ -19,7 +19,8 @@ import { PeoplePage } from './pages/people/people.page';
 
   imports: [BrowserModule, 
     IonicModule.forRoot(), 
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
