@@ -1,0 +1,22 @@
+<ion-app>
+  <ion-content [scrollEvents]="true">
+    <ion-card *ngFor="let item of results; let i = index">
+      <ion-card-header>
+        <img [src]="item.image">
+        <ion-card-title class="name">{{ item.name }}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content class="species">
+        {{ item.species | uppercase }}
+      </ion-card-content>
+      <ion-row class="buttons">
+        <ion-col class="buttonOk">
+          <ion-button expand="block" color="success" size="large" (click)="addToBasket(item)">OK</ion-button>
+        </ion-col>
+        <ion-col class="buttonRefuse">
+          <ion-button expand="block" color="danger" size="large" (click)="erase(i)">Refuse</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-content>
+</ion-app>
