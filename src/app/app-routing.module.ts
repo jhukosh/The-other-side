@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'account',
     component: AccountComponent
   }
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+  { path: 'people', loadChildren: './pages/people/people.module#PeoplePageModule' },
+  { path: 'people/:id', loadChildren: './pages/people-details/people-details.module#PeopleDetailsPageModule' },
 ];
 
 @NgModule({
