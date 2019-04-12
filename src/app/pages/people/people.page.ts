@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { PeopleService} from '../../services/people.service'
@@ -14,6 +14,7 @@ export class PeoplePage implements OnInit {
   result;
   index:number;
   adds = [];
+  @Input() sendAdds(){return this.adds};
 
   constructor(private peopleService : PeopleService) {}
  
@@ -34,6 +35,7 @@ export class PeoplePage implements OnInit {
 
    addToBasket(person){
      this.adds.push(person);
+     console.log(this.adds);
    }
 
    erase(index) {
