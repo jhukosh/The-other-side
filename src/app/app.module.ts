@@ -9,18 +9,12 @@ import { NetworkInterface } from '@ionic-native/network-interface/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AccountComponent } from './account/account.component';
-import { BasketComponent } from './basket/basket.component';
-
-
 import { HttpClientModule } from '@angular/common/http';
+import { AccountComponent } from './account/account.component';
+import { PeoplePage } from './pages/people/people.page';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AccountComponent,
-    BasketComponent
-    ],
+  declarations: [AppComponent, AccountComponent, PeoplePage],
   entryComponents: [],
 
   imports: [BrowserModule, 
